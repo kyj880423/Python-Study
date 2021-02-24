@@ -23,6 +23,8 @@ print(sec_dpc.head())
 msft_dpc = (msft.Close / msft.Close.shift(1) - 1) * 100
 msft_dpc.iloc[0] = 0
 
+print(sec.index)
+print(sec_dpc)
 
 
 plt.plot(sec.index, sec_dpc,'b', label='Samsung')
